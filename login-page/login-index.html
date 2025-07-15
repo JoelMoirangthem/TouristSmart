@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tourismart Varanasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1">
+                <i class="fas fa-om"></i>
+            </div>
+            <div class="shape shape-2">
+                <i class="fas fa-dharmachakra"></i>
+            </div>
+            <div class="shape shape-3">
+                <i class="fas fa-lotus"></i>
+            </div>
+            <div class="shape shape-4">
+                <i class="fas fa-praying-hands"></i>
+            </div>
+            <div class="shape shape-5">
+                <i class="fas fa-peace"></i>
+            </div>
+            <div class="shape shape-6">
+                <i class="fas fa-star-and-crescent"></i>
+            </div>
+        </div>
+        <div class="ganga-waves">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
+    </div>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <!-- Left Side - Welcome Section -->
+        <div class="welcome-section">
+            <div class="welcome-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <i class="fas fa-gopuram"></i>
+                        <h1>Tourismart</h1>
+                    </div>
+                    <p class="tagline">Your Gateway to Sacred Varanasi</p>
+                </div>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Explore Your Locality</h3>
+                            <p>Discover hidden gems and local spiritual landmarks in the holy city of Varanasi.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Shop Nearby</h3>
+                            <p>Browse vibrant street markets, silk sarees, handicrafts, and cultural souvenirs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Famous Vlogs</h3>
+                            <p>Watch curated vlogs from seasoned travelers exploring Varanasi's mystic aura.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>New Here?</h3>
+                            <p>Hire an expert local tour guide to enrich your experience through history and spirituality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Login Form -->
+        <div class="login-section">
+            <div class="login-form-container">
+                <div class="form-header">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to continue your spiritual journey</p>
+                </div>
+
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-container">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-container">
+                            <i class="fas fa-lock input-icon"></i>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">
+                        <span class="btn-text">Sign In</span>
+                        <i class="fas fa-arrow-right btn-icon"></i>
+                        <div class="btn-loader">
+                            <div class="spinner"></div>
+                        </div>
+                    </button>
+                </form>
+
+                <div class="divider">
+                    <span>or</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="social-btn google-btn">
+                        <i class="fab fa-google"></i>
+                        <span>Continue with Google</span>
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Continue with Facebook</span>
+                    </button>
+                </div>
+
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="signup.html">Create one now</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Cards Section -->
+    <div class="services-section">
+        <div class="services-container">
+            <h2>What You Can Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Plan Your Trip</h3>
+                    <p>Create personalized itineraries for your spiritual journey through Varanasi</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food & Catering</h3>
+                    <p>Discover authentic local cuisine and traditional dining experiences</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Rent Vehicle</h3>
+                    <p>Book reliable transportation for comfortable city exploration</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>E-Ticket</h3>
+                    <p>Book tickets for temples, events, and cultural experiences</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Food & Lodge</h3>
+                    <p>Find comfortable accommodations near sacred sites</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Best Deals</h3>
+                    <p>Access exclusive offers and discounts for travelers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Get to Know Us</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-section">
+                <h4>Let Us Help</h4>
+                <a href="#">Account</a>
+                <a href="#">Police Station</a>
+                <a href="#">Medical Services</a>
+            </div>
+            <div class="footer-section">
+                <h4>Make Money with Us</h4>
+                <a href="#">Register</a>
+                <a href="#">Become a Guide</a>
+                <a href="#">Vendor Program</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tourismart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

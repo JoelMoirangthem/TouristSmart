@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Tourismart Varanasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="spiritual-particles">
+            <div class="particle particle-1">
+                <i class="fas fa-om"></i>
+            </div>
+            <div class="particle particle-2">
+                <i class="fas fa-lotus"></i>
+            </div>
+            <div class="particle particle-3">
+                <i class="fas fa-dharmachakra"></i>
+            </div>
+            <div class="particle particle-4">
+                <i class="fas fa-praying-hands"></i>
+            </div>
+            <div class="particle particle-5">
+                <i class="fas fa-peace"></i>
+            </div>
+            <div class="particle particle-6">
+                <i class="fas fa-star-and-crescent"></i>
+            </div>
+        </div>
+        <div class="mandala-patterns">
+            <div class="mandala mandala-1"></div>
+            <div class="mandala mandala-2"></div>
+            <div class="mandala mandala-3"></div>
+        </div>
+    </div>
+
+    <!-- Registration Container -->
+    <div class="registration-container">
+        <!-- Left Side - Form Section -->
+        <div class="form-section">
+            <div class="form-header">
+                <div class="logo-container">
+                    <div class="logo">
+                        <i class="fas fa-gopuram"></i>
+                        <h1>Tourismart</h1>
+                    </div>
+                    <p class="tagline">Begin Your Sacred Journey</p>
+                </div>
+                <div class="progress-indicator">
+                    <div class="progress-step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <span class="step-label">Personal Info</span>
+                    </div>
+                    <div class="progress-step" data-step="2">
+                        <div class="step-number">2</div>
+                        <span class="step-label">Preferences</span>
+                    </div>
+                    <div class="progress-step" data-step="3">
+                        <div class="step-number">3</div>
+                        <span class="step-label">Complete</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi-Step Form -->
+            <form id="registrationForm" class="registration-form">
+                <!-- Step 1: Personal Information -->
+                <div class="form-step active" data-step="1">
+                    <h2>Personal Information</h2>
+                    <p>Tell us about yourself to personalize your experience</p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <div class="input-container">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <div class="input-container">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-container">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <div class="input-container">
+                            <i class="fas fa-phone input-icon"></i>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-container">
+                                <i class="fas fa-lock input-icon"></i>
+                                <input type="password" id="password" name="password" placeholder="Create a password" required>
+                                <i class="fas fa-eye toggle-password" data-target="password"></i>
+                            </div>
+                            <div class="password-strength">
+                                <div class="strength-bar">
+                                    <div class="strength-fill"></div>
+                                </div>
+                                <span class="strength-text">Password strength</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <div class="input-container">
+                                <i class="fas fa-lock input-icon"></i>
+                                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                                <i class="fas fa-eye toggle-password" data-target="confirmPassword"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <div class="input-container">
+                            <i class="fas fa-calendar input-icon"></i>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-next" onclick="nextStep()">
+                            <span>Next Step</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Travel Preferences -->
+                <div class="form-step" data-step="2">
+                    <h2>Travel Preferences</h2>
+                    <p>Help us customize your Varanasi experience</p>
+
+                    <div class="form-group">
+                        <label>What brings you to Varanasi?</label>
+                        <div class="interest-grid">
+                            <div class="interest-item" data-value="spiritual">
+                                <i class="fas fa-om"></i>
+                                <span>Spiritual Journey</span>
+                            </div>
+                            <div class="interest-item" data-value="cultural">
+                                <i class="fas fa-landmark"></i>
+                                <span>Cultural Heritage</span>
+                            </div>
+                            <div class="interest-item" data-value="photography">
+                                <i class="fas fa-camera"></i>
+                                <span>Photography</span>
+                            </div>
+                            <div class="interest-item" data-value="food">
+                                <i class="fas fa-utensils"></i>
+                                <span>Food Experience</span>
+                            </div>
+                            <div class="interest-item" data-value="adventure">
+                                <i class="fas fa-hiking"></i>
+                                <span>Adventure</span>
+                            </div>
+                            <div class="interest-item" data-value="relaxation">
+                                <i class="fas fa-spa"></i>
+                                <span>Wellness & Yoga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="budget">Travel Budget (per day)</label>
+                            <div class="input-container">
+                                <i class="fas fa-rupee-sign input-icon"></i>
+                                <select id="budget" name="budget" required>
+                                    <option value="">Select budget range</option>
+                                    <option value="budget">₹1,000 - ₹2,500 (Budget)</option>
+                                    <option value="mid">₹2,500 - ₹5,000 (Mid-range)</option>
+                                    <option value="luxury">₹5,000+ (Luxury)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="groupSize">Group Size</label>
+                            <div class="input-container">
+                                <i class="fas fa-users input-icon"></i>
+                                <select id="groupSize" name="groupSize" required>
+                                    <option value="">Select group size</option>
+                                    <option value="solo">Solo Traveler</option>
+                                    <option value="couple">Couple (2 people)</option>
+                                    <option value="family">Family (3-6 people)</option>
+                                    <option value="group">Group (7+ people)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="language">Preferred Language</label>
+                        <div class="input-container">
+                            <i class="fas fa-language input-icon"></i>
+                            <select id="language" name="language" required>
+                                <option value="">Select language</option>
+                                <option value="english">English</option>
+                                <option value="hindi">Hindi</option>
+                                <option value="sanskrit">Sanskrit</option>
+                                <option value="bengali">Bengali</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Special Requirements</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="accessibility" name="requirements" value="accessibility">
+                                <label for="accessibility">Accessibility Support</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="vegetarian" name="requirements" value="vegetarian">
+                                <label for="vegetarian">Vegetarian Food Only</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="earlyMorning" name="requirements" value="earlyMorning">
+                                <label for="earlyMorning">Early Morning Rituals</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="photography" name="requirements" value="photography">
+                                <label for="photography">Photography Assistance</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-prev" onclick="prevStep()">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>Previous</span>
+                        </button>
+                        <button type="button" class="btn btn-next" onclick="nextStep()">
+                            <span>Complete Registration</span>
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Completion -->
+                <div class="form-step" data-step="3">
+                    <div class="completion-content">
+                        <div class="success-animation">
+                            <div class="lotus-bloom">
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                                <div class="petal"></div>
+                            </div>
+                            <i class="fas fa-check-circle success-icon"></i>
+                        </div>
+                        <h2>Welcome to Tourismart!</h2>
+                        <p>Your account has been created successfully. You're now ready to explore the sacred city of Varanasi.</p>
+                        
+                        <div class="completion-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-gift"></i>
+                                <span>Welcome bonus: 10% off your first booking</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-user-shield"></i>
+                                <span>Priority customer support</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-bell"></i>
+                                <span>Personalized recommendations</span>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-complete" onclick="completeRegistration()">
+                                <span>Start Exploring</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Terms and Social -->
+            <div class="form-footer">
+                <div class="terms-section">
+                    <div class="terms-checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <div class="newsletter-checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">
+                            Subscribe to our newsletter for exclusive deals and spiritual insights
+                        </label>
+                    </div>
+                </div>
+
+                <div class="social-signup">
+                    <div class="divider">
+                        <span>or sign up with</span>
+                    </div>
+                    <div class="social-buttons">
+                        <button type="button" class="social-btn google-btn">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="social-btn facebook-btn">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login-link">
+                    <p>Already have an account? <a href="/login">Sign in here</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Experience Preview -->
+        <div class="preview-section">
+            <div class="preview-content">
+                <div class="preview-header">
+                    <h2>Your Varanasi Experience Awaits</h2>
+                    <p>Discover what makes your journey special</p>
+                </div>
+
+                <div class="experience-carousel">
+                    <div class="experience-slide active">
+                        <div class="slide-image">
+                            <i class="fas fa-gopuram"></i>
+                        </div>
+                        <h3>Sacred Temples</h3>
+                        <p>Visit ancient temples and witness timeless spiritual traditions along the ghats of Varanasi.</p>
+                    </div>
+                    <div class="experience-slide">
+                        <div class="slide-image">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <h3>Ganga Boat Rides</h3>
+                        <p>Experience magical sunrise and sunset boat rides on the holy River Ganges.</p>
+                    </div>
+                    <div class="experience-slide">
+                        <div class="slide-image">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Authentic Cuisine</h3>
+                        <p>Savor traditional street food and spiritual delicacies unique to Varanasi.</p>
+                    </div>
+                    <div class="experience-slide">
+                        <div class="slide-image">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Photography Tours</h3>
+                        <p>Capture the spiritual essence and architectural beauty of the ancient city.</p>
+                    </div>
+                </div>
+
+                <div class="preview-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50,000+</div>
+                        <div class="stat-label">Happy Travelers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Sacred Sites</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Tourismart made my spiritual journey to Varanasi absolutely transformative. The personalized recommendations and expert guides created memories I'll treasure forever."</p>
+                        <div class="testimonial-author">
+                            <strong>Priya Sharma</strong>
+                            <span>Spiritual Seeker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Get to Know Us</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-section">
+                <h4>Let Us Help</h4>
+                <a href="#">Account</a>
+                <a href="#">Police Station</a>
+                <a href="#">Medical Services</a>
+            </div>
+            <div class="footer-section">
+                <h4>Make Money with Us</h4>
+                <a href="#">Register</a>
+                <a href="#">Become a Guide</a>
+                <a href="#">Vendor Program</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tourismart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

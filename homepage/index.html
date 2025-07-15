@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourismart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="lotus-flower">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+            <p class="loading-text">Welcome to Tourismart</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Tourismart</h2>
+            </div>
+            <div class="nav-auth">
+                <a href="../login-page/login-index.html">
+
+                    <button class="btn btn-auth-nav btn-login-nav">Login</button>
+                </a>
+
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login
+                </button>
+                <a href="../Registration-page/registration-ndex.html" >
+                    <button class="btn btn-auth-nav btn-signup-nav" >
+                        <i class="fas fa-user-plus"></i>
+                        
+                        Sign Up
+                    </button>
+
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Landing Section -->
+    <section class="hero-landing">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" style="--delay: 0s;"><i class="fas fa-om"></i></div>
+                <div class="floating-element" style="--delay: 2s;"><i class="fas fa-dharmachakra"></i></div>
+                <div class="floating-element" style="--delay: 4s;"><i class="fas fa-praying-hands"></i></div>
+                <div class="floating-element" style="--delay: 1s;"><i class="fas fa-star-and-crescent"></i></div>
+                <div class="floating-element" style="--delay: 3s;"><i class="fas fa-peace"></i></div>
+                <div class="floating-element" style="--delay: 5s;"><i class="fas fa-lotus"></i></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Welcome to</span>
+                    <span class="title-line highlight">Tourismart</span>
+                </h1>
+                <p class="hero-subtitle">Your Gateway to India's Most Famous Places</p>
+                <p class="hero-description">Experience the beauty of India's famous places with our expertly curated tours, authentic experiences, and personalized service</p>
+                <div class="hero-buttons">
+                    <a href="../Registration-page/registration-ndex.html" style="text-decoration: none;">
+
+                        <button class="btn btn-primary-hero" >
+                            <i class="fas fa-user-plus"></i>
+                            Start Your Journey
+                        </button>
+                    </a>
+                    <a href="../login-page/login-index.html" style="text-decoration: none;">
+
+                        <button class="btn btn-secondary-hero" onclick="showLoginModal()">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Already a Member?
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="ganga-waves">
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Services Section -->
+    <section class="landing-info">
+        <div class="container">
+            <div class="info-grid">
+                <!-- Contact Information -->
+                <div class="info-card contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+91 123 456 7890</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">info@tourismart.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Address</span>
+                                <span class="contact-value">Varanasi, Uttar Pradesh, India</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-whatsapp"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">WhatsApp</span>
+                                <span class="contact-value">+91 987 654 3210</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Hours</span>
+                                <span class="contact-value">24/7 Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Overview -->
+                <div class="info-card services-card">
+                    <div class="card-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Our Services</h3>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <i class="fas fa-route"></i>
+                            <div class="service-text">
+                                <span class="service-name">Guided Temple Tours</span>
+                                <span class="service-desc">Expert-led spiritual journeys</span>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-ship"></i>
+                            <div class="service-text">
+                                <span class="service-name">Ganga Boat Rides</span>
+                                <span class="service-desc">Sunrise & sunset experiences</span>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-bed"></i>
+                            <div class="service-text">
+                                <span class="service-name">Accommodation</span>
+                                <span class="service-desc">Comfortable stays near ghats</span>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-utensils"></i>
+                            <div class="service-text">
+                                <span class="service-name">Food Experiences</span>
+                                <span class="service-desc">Authentic local cuisine</span>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-camera"></i>
+                            <div class="service-text">
+                                <span class="service-name">Photography Tours</span>
+                                <span class="service-desc">Capture sacred moments</span>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-spa"></i>
+                            <div class="service-text">
+                                <span class="service-name">Wellness & Yoga</span>
+                                <span class="service-desc">Spiritual wellness programs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Offers -->
+                <div class="info-card offers-card">
+                    <div class="card-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Special Offers</h3>
+                    <div class="offers-content">
+                        <div class="offer-highlight">
+                            <div class="offer-badge">
+                                <i class="fas fa-percent"></i>
+                                <span>30% OFF</span>
+                            </div>
+                            <div class="offer-text">
+                                <span class="offer-title">First Time Visitors</span>
+                                <span class="offer-desc">Book your first spiritual journey and save!</span>
+                            </div>
+                        </div>
+                        <div class="offer-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Free Ganga Aarti Experience</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Complimentary Temple Guide</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>24/7 Support</span>
+                            </div>
+                        </div>
+                        <div class="emergency-info">
+                            <div class="emergency-header">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Emergency Support</span>
+                            </div>
+                            <div class="emergency-contact">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 911 123 4567</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Begin Your Spiritual Journey?</h2>
+                <p>Join thousands of travelers who have discovered the magic of Varanasi with Tourismart</p>
+                <div class="cta-buttons">
+                    <a href="../Registration-page/registration-ndex.html" style="text-decoration: none;">
+                        <button class="btn btn-cta-primary" >
+                            <i class="fas fa-user-plus"></i>
+                            Create Account
+                        </button>
+                    </a>
+                    <a href="../login-page/login-index.html" style="text-decoration: none;">
+                        <button class="btn btn-cta-secondary" >
+                            <i class="fas fa-sign-in-alt"></i>
+                            Login
+                        </button>
+
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Welcome Back</h3>
+                <span class="close" onclick="hideLoginModal()">&times;</span>
+            </div>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                    <i class="fas fa-envelope form-icon"></i>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <i class="fas fa-lock form-icon"></i>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn btn-auth-submit">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login
+                </button>
+            </form>
+            <div class="auth-footer">
+    
+
+                    <p>Don't have an account? <a href="../Registration-page/registration-ndex.html" >Sign up here</a></p>
+                    <!-- <p>Don't have an account? <a href="#" onclick="switchToSignup()">Sign up here</a></p> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Join Tourismart</h3>
+                <span class="close" onclick="hideSignupModal()">&times;</span>
+            </div>
+            <form id="signupForm" class="auth-form">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" name="name" required>
+                    <i class="fas fa-user form-icon"></i>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="email" required>
+                    <i class="fas fa-envelope form-icon"></i>
+                </div>
+                <div class="form-group">
+                    <label for="signupPhone">Phone Number</label>
+                    <input type="tel" id="signupPhone" name="phone" required>
+                    <i class="fas fa-phone form-icon"></i>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                    <i class="fas fa-lock form-icon"></i>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <i class="fas fa-lock form-icon"></i>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the Terms & Conditions
+                    </label>
+                </div>
+                <a href="../Registration-page/registration-ndex.html" style="text-decoration: none;">
+
+                    <button type="submit" class="btn btn-auth-submit">
+                        <i class="fas fa-user-plus"></i>
+                        Create Account
+                    </button>
+                </a>
+            </form>
+            <div class="auth-footer">
+                <p>Already have an account? <a href="#" onclick="switchToLogin()">Login here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tourismart</h3>
+                    <p>Experience the spiritual essence of Varanasi with our expertly curated tours and authentic experiences.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" onclick="showLoginModal()">Login</a></li>
+                        <li><a href="../Registration-page/registration-ndex.html" >Sign Up</a></li>
+                        <!-- <li><a href="#" onclick="showSignupModal()">Sign Up</a></li> -->
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+                        <p><i class="fas fa-envelope"></i> info@tourismart.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Varanasi, UP, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tourismart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
