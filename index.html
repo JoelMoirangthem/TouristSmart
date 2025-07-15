@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourismart - Varanasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="lotus-flower">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+            <p class="loading-text">Welcome to Varanasi</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Tourismart</h2>
+                <span class="logo-subtitle">Varanasi</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#attractions" class="nav-link">Attractions</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" style="--delay: 0s;"><i class="fas fa-om"></i></div>
+                <div class="floating-element" style="--delay: 2s;"><i class="fas fa-dharmachakra"></i></div>
+                <div class="floating-element" style="--delay: 4s;"><i class="fas fa-praying-hands"></i></div>
+                <div class="floating-element" style="--delay: 1s;"><i class="fas fa-star-and-crescent"></i></div>
+                <div class="floating-element" style="--delay: 3s;"><i class="fas fa-peace"></i></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Discover the</span>
+                    <span class="title-line highlight">Sacred City</span>
+                    <span class="title-line">of Varanasi</span>
+                </h1>
+                <p class="hero-subtitle">Experience the spiritual essence of India's oldest living city</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Explore Now</button>
+                    <button class="btn btn-secondary">Watch Video</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="ganga-waves">
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Varanasi</h2>
+                <p class="section-subtitle">The spiritual heart of India</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>Ancient Heritage</h3>
+                        <p>One of the world's oldest continuously inhabited cities, dating back over 3,000 years.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Sacred Ganges</h3>
+                        <p>The holy river Ganges flows through the city, making it a sacred pilgrimage destination.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-temple"></i>
+                        </div>
+                        <h3>Spiritual Center</h3>
+                        <p>Home to over 2,000 temples and countless spiritual traditions and practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="attractions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Must-Visit Attractions</h2>
+                <p class="section-subtitle">Discover the wonders of Varanasi</p>
+            </div>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <div class="card-image">
+                        <div class="gradient-overlay"></div>
+                        <i class="fas fa-dharmachakra attraction-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Dashashwamedh Ghat</h3>
+                        <p>The most famous ghat where the spectacular Ganga Aarti ceremony takes place every evening.</p>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <div class="card-image">
+                        <div class="gradient-overlay"></div>
+                        <i class="fas fa-mosque attraction-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kashi Vishwanath Temple</h3>
+                        <p>One of the most famous Hindu temples dedicated to Lord Shiva, located in the heart of Varanasi.</p>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <div class="card-image">
+                        <div class="gradient-overlay"></div>
+                        <i class="fas fa-university attraction-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Banaras Hindu University</h3>
+                        <p>One of the largest residential universities in Asia, known for its academic excellence and campus beauty.</p>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <div class="card-image">
+                        <div class="gradient-overlay"></div>
+                        <i class="fas fa-sun attraction-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sunrise at Ganges</h3>
+                        <p>Experience the magical sunrise boat ride on the holy Ganges river for a spiritual awakening.</p>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <div class="card-image">
+                        <div class="gradient-overlay"></div>
+                        <i class="fas fa-music attraction-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ramnagar Fort</h3>
+                        <p>A historic fort and palace complex showcasing the rich cultural heritage of Varanasi.</p>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <div class="card-image">
+                        <div class="gradient-overlay"></div>
+                        <i class="fas fa-leaf attraction-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sarnath</h3>
+                        <p>The deer park where Buddha first taught the Dharma, a must-visit Buddhist pilgrimage site.</p>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Glimpses of the eternal city</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Ganga Aarti Ceremony</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Ancient Temples</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Ghats at Sunrise</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Street Life</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Plan your spiritual journey</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>Varanasi, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+91 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@tourismart.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tourismart</h3>
+                    <p>Discover the spiritual essence of Varanasi with us. Experience the ancient traditions and modern hospitality.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#attractions">Attractions</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tourismart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
